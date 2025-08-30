@@ -1,0 +1,144 @@
+;;
+;; Corne-inspired Colemak Mod-DH with Home Row Mods for Kanata on macOS
+;;
+;; This configuration recreates a Corne keyboard experience on your MacBook
+;; with home row modifiers and layer switching similar to split keyboards.
+;;
+;; IMPORTANT: Run with sudo on macOS
+;; sudo kanata --cfg corne-homerow-kanata.kbd
+;;
+;; Based on Corne layout philosophy:
+;; - Home row modifiers for ergonomic access to Cmd/Alt/Ctrl/Shift
+;; - Layer switching for numbers, symbols, navigation
+;; - Colemak Mod-DH for optimal typing
+;;
+
+(defcfg
+  process-unmapped-keys   yes
+  concurrent-tap-hold     yes
+  allow-hardware-repeat   no
+  rapid-event-delay       5
+  sequence-timeout        2000
+)
+
+;; Source layer - full keyboard
+(defsrc
+  esc     f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  grv     1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab     q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps    a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft    z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl    lmet lalt           spc            ralt rmet menu rctl
+)
+
+;; Base layer: Colemak Mod-DH with Home Row Mods
+;; Home row: A(Cmd) R(Alt) S(Ctrl) T(Shift) | M(Shift) N(Ctrl) E(Alt) I(Cmd)
+(deflayer base
+  esc     f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  grv     1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab     q    w    f    p    b    j    l    u    y    ;    [    ]    \
+  @nav    @a   @r   @s   @t   g    @m   @n   @e   @i   @o   '    ret
+  @sym    z    x    c    d    v    k    @h   ,    .    /    @fun
+  lctl    lmet @num           @spc           ralt rmet menu rctl
+)
+
+;; Extended navigation layer (activated by Caps Lock) with home row mods
+(deflayer extend
+  _       @lq  @lh  @lm  _    _    _    _    _    _    _    _    _
+  _       @lq  @lh  @lm  _    _    _    _    _    _    _    _    _    _
+  _       esc  @bk  @fnd @fw  ins  pgup home up   end  menu _    slck _
+  _       lalt lmet lsft lctl ralt pgdn lft  down rght del  caps _
+  _       @cut @cpy tab  @pst @udo pgdn bspc lsft lctl menu _
+  _       _    _              ret            _    _    _    _
+)
+
+;; Number layer (space + left thumb)
+(deflayer num
+  _       _    _    _    _    _    _    _    _    _    _    _    _
+  _       _    _    _    _    _    _    _    _    _    _    _    _    _
+  _       _    _    _    _    _    _    7    8    9    _    _    _    _
+  _       _    _    _    _    _    _    4    5    6    0    _    _
+  _       _    _    _    _    _    _    1    2    3    _    _
+  _       _    _              _              _    _    _    _
+)
+
+;; Symbol layer (shift key positions)
+(deflayer sym
+  _       _    _    _    _    _    _    _    _    _    _    _    _
+  _       _    _    _    _    _    _    _    _    _    _    _    _    _
+  _       S-1  S-2  S-3  S-4  S-5  S-6  S-7  S-8  -    S-=  _    _    _
+  _       _    _    _    _    _    _    S-9  S-0  [    ]    _    _
+  _       _    _    _    _    _    _    S-[  S-]  _    _    _
+  _       _    _              _              _    _    _    _
+)
+
+;; Function layer (right shift)
+(deflayer fun
+  _       _    _    _    _    _    _    _    _    _    _    _    _
+  _       f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  _
+  _       _    _    _    _    _    _    _    _    _    _    _    _    _
+  _       _    _    _    _    _    _    _    _    _    _    _    _
+  _       _    _    _    _    _    _    _    _    _    _    _
+  _       _    _              _              _    _    _    _
+)
+
+;; One-shot modifier layer (alternative approach - uncomment to use)
+;; Access via a dedicated key if you struggle with tap-hold home row mods
+;; (deflayer oneshot
+;;   _       _    _    _    _    _    _    _    _    _    _    _    _
+;;   _       _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _       _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _       @oscmd @osalt @osctl @ossft _  _  @ossft @osctl @osalt @oscmd _  _  _
+;;   _       _    _    _    _    _    _    _    _    _    _    _
+;;   _       _    _              _              _    _    _    _
+;; )
+
+;; Aliases for home row mods and layer keys
+(defalias
+  ;; Home Row Mods (Left Hand) - Bilateral combinations to prevent accidental activation
+  ;; These mods DON'T activate when followed by same-hand keys (prevents typing rolls)
+  ;; Left hand mods - GACS (GUI/Alt/Control/Shift) symmetric layout
+  a (tap-hold-except-keys 250 250 a lmet (r s t))  ;; A / GUI (Cmd) - except adjacent home row
+  r (tap-hold-except-keys 250 250 r lalt (a s t))  ;; R / Alt - except adjacent home row
+  s (tap-hold-except-keys 250 250 s lctl (a r t))  ;; S / Control - except adjacent home row  
+  t (tap-hold-except-keys 200 200 t lsft (a r s))  ;; T / Shift - except adjacent home row
+
+  ;; Home Row Mods (Right Hand) - Bilateral combinations to prevent accidental activation  
+  ;; These mods DON'T activate when followed by same-hand keys (prevents typing rolls)
+  ;; Right hand mods - GACS on OIEN positions (O=GUI, I=Alt, E=Control, N=Shift)
+  m (tap-hold-except-keys 200 200 m rsft (n e i o))  ;; M / Shift - except adjacent home row
+  n (tap-hold-except-keys 200 200 n rsft (m e i o))  ;; N / Shift - except adjacent home row
+  e (tap-hold-except-keys 250 250 e rctl (m n i o))  ;; E / Control - except adjacent home row
+  i (tap-hold-except-keys 250 250 i ralt (m n e o))  ;; I / Alt - except adjacent home row
+  o (tap-hold-except-keys 250 250 o rmet (m n e i))  ;; O / GUI (Cmd) - except adjacent home row
+  
+  ;; Additional home row mod for H key - bilateral combination
+  h (tap-hold-except-keys 250 250 h rsft (m n e i o))  ;; H / Shift - except home row
+
+  ;; Layer switching keys
+  nav (layer-toggle extend)             ;; Caps -> Extended nav layer
+  num (layer-toggle num)                ;; Number layer 
+  sym (layer-toggle sym)                ;; Symbol layer
+  fun (layer-toggle fun)                ;; Function layer
+  
+  ;; Enhanced space key
+  spc (tap-hold 200 200 spc (layer-toggle num))  ;; Space / Number layer
+  
+  ;; One-shot modifiers (alternative for users who struggle with tap-hold)
+  oscmd (one-shot 2000 lmet)     ;; One-shot Cmd (2 second timeout)
+  osalt (one-shot 2000 lalt)     ;; One-shot Alt
+  osctl (one-shot 2000 lctl)     ;; One-shot Ctrl  
+  ossft (one-shot 2000 lsft)     ;; One-shot Shift
+  
+  ;; Extend layer shortcuts and layer switching
+  lq   (layer-switch base)        ;; Switch to base layer
+  lh   (layer-switch base)        ;; Switch back to base layer
+  lm   (layer-switch base)        ;; Switch to main layer (base)
+  bk   A-lft                      ;; Browser back
+  fnd  C-f                        ;; Find (Cmd+F on macOS)
+  fw   A-rght                     ;; Browser forward
+  cut  C-x                        ;; Cut
+  cpy  C-c                        ;; Copy
+  pst  C-v                        ;; Paste
+  udo  C-z                        ;; Undo
+)
