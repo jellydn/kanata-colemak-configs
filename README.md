@@ -20,7 +20,7 @@ This repository contains three distinct Kanata configurations designed for diffe
 ### Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/kanata-colemak-configs.git
+   git clone https://github.com/jellydn/kanata-colemak-configs.git
    cd kanata-colemak-configs
    ```
 
