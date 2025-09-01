@@ -65,9 +65,9 @@
 (deflayer extend
   _       @lq  @lh  @lm  _    _    _    _    _    _    _    _    _
   _       @lq  @lh  @lm  _    _    _    _    _    _    _    _    _    _
-  _       esc  @bk  @fnd @fw  ins  pgup home up   end  menu _    slck _
+  tab     esc  @bk  @fnd @fw  ins  pgup home up   end  _    _    _    _
   _       lalt lmet lsft lctl ralt pgdn lft  down rght del  caps _
-  _       @cut @cpy tab  @pst @udo pgdn bspc lsft lctl menu _
+  _       @cut @cpy tab  @pst @udo pgdn bspc lsft lctl _    _
   _       _    _              ret            _    _    _    _
 )
 
