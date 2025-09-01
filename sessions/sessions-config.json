@@ -1,0 +1,21 @@
+{
+  "developer_name": "Dung Huynh Duc",
+  "trigger_phrases": [
+    "make it so",
+    "run that",
+    "go ahead",
+    "yert",
+    "go ahead",
+    "do it"
+  ],
+  "blocked_tools": [
+    "NotebookEdit"
+  ],
+  "task_detection": {
+    "enabled": true
+  },
+  "branch_enforcement": {
+    "enabled": true
+  },
+  "api_mode": false
+}
