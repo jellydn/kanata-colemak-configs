@@ -1,6 +1,6 @@
 # 🔢 Number Layer - Ergonomic Numpad
 
-The **Number Layer** transforms your right hand into a comfortable numpad, activated by holding the Space bar (@spc). This layer provides ergonomic numeric input without reaching for a separate numpad or the top number row.
+The **Number Layer** transforms your right hand into a comfortable numpad, activated by holding the Space bar (@spc). This layer provides ergonomic numeric input without reaching for a separate numpad or the top number row, plus includes the hash symbol (#) for its intuitive Shift+3 relationship.
 
 ## 🎯 Overview
 
@@ -18,7 +18,7 @@ The Number Layer features:
 ├─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──────┤
 │ ---    │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ ---  │
 ├────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬────┤
-│ ---      │ --- │ --- │ --- │ --- │ --- │ --- │ 🔢7 │ 🔢8 │ 🔢9 │ --- │ --- │ --- │ ---│
+│ ---      │ --- │ --- │ --- │ --- │ --- │ --- │ 🔢7 │ 🔢8 │ 🔢9 │ 🏷️# │ --- │ --- │ ---│
 ├──────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴────┤
 │ ---        │ --- │ --- │ --- │ --- │ --- │ --- │ 🔢4 │ 🔢5 │ 🔢6 │ 🔢0 │ --- │ ---    │
 ├────────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴────────┤
@@ -30,6 +30,7 @@ The Number Layer features:
 
 ### 🏷️ Legend
 - **🔢** = Number input
+- **🏷️** = Hash symbol (#) - Shift+3 equivalent
 - **@spc** = Space bar hold activates number layer
 
 ## 🗝️ Activation Methods
@@ -46,7 +47,7 @@ The Number Layer features:
 │                                                         │
 │ Usage Pattern:                                          │
 │ 1. Hold Space Bar for numbers                          │
-│ 2. Press desired numeric keys (7,8,9,4,5,6,1,2,3,0)   │
+│ 2. Press desired keys (7,8,9,#,4,5,6,0,1,2,3)         │
 │ 3. Release Space Bar                                    │
 │                                                         │
 │ Benefits:                                               │
@@ -64,8 +65,8 @@ The Number Layer features:
 │            NUMPAD LAYOUT                    │
 ├─────────────────────────────────────────────┤
 │                                             │
-│     7    8    9                            │
-│     U    I    O                            │
+│     7    8    9    #                       │
+│     U    I    O    '                       │
 │                                             │
 │     4    5    6    0                       │
 │     L    U    Y    ;                       │
@@ -89,6 +90,7 @@ The Number Layer features:
 | **U** | 7 | Top-Left | Index | Traditional numpad |
 | **I** | 8 | Top-Center | Middle | Most common digit |
 | **O** | 9 | Top-Right | Ring | Completes top row |
+| **'** | # | Top-End | Pinky | Hash (Shift+3) symbol |
 | **L** | 4 | Mid-Left | Index | Left column |
 | **U** | 5 | Mid-Center | Middle | Center position |
 | **Y** | 6 | Mid-Right | Ring | Right column |
