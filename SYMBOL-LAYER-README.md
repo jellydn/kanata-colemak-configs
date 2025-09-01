@@ -16,33 +16,54 @@ The Symbol Layer features:
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────────┐
 │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │         │
 ├─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──────┤
-│ ---    │ 💥! │ 📧@ │ 🏷️# │ 💰$ │ 📊% │ ⬆️^ │ 🤝& │ ⭐* │ 🔁- │ ➕+ │ --- │ --- │ ---  │
+│ ---    │ 💥! │ 📧@ │ 🔧{ │ 🔧} │ 🔀| │ 📁/ │ 📦( │ 📦) │ 🟰= │ 🔚; │ --- │ --- │ ---  │
 ├────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬────┤
-│ ---      │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ ---│
+│ ---      │ 🔁- │ 🔗_ │ 📋[ │ 📋] │ 🎵` │ 📂\ │ 🔶: │ ➕+ │ ⭐* │ 🤝& │ --- │ --- │ ---│
 ├──────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴────┤
-│ ---        │ --- │ --- │ --- │ --- │ --- │ --- │ 📦( │ 📦) │ 📋[ │ 📋] │ --- │ ---    │
+│ ---        │ 📐< │ 📐> │ 💰$ │ 📊% │ ⬆️^ │ 🌊~ │ 💬" │ 💭' │ ❓? │ --- │ ---        │
 ├────────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴────────┤
-│ ---          │ --- │ --- │ --- │ --- │ --- │ --- │ 🔧{ │ 🔧} │ --- │ --- │ ---        │
+│ ---          │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ ---        │
 ├───────┬──────┴─┬───┴───┬─┴─────┴─────┴─────┴─────┴─┬───┴───┬─┴────┬─┴──────┬─┴────┬───┤
 │ ---   │ ---    │🔣@sym │          ⏎ ENTER          │ ---   │ ---  │  ---   │ ---  │   │
 └───────┴────────┴───────┴────────────────────────────┴───────┴──────┴────────┴──────┴───┘
 ```
 
-### 🏷️ Legend
+### 🏷️ Legend - **Optimized for Smaller Hands**
+
+**Home Row Symbols (Strongest Fingers)**:
+- **🔧** = Braces { } - Code blocks, Objects (D/V → home row!)
+- **📦** = Parentheses ( ) - Function calls (F/P → home row!)  
+- **🟰** = Equal = - Assignment (B → home row!)
+- **🔚** = Semicolon ; - Statement termination (J → home row!)
+- **📋** = Square brackets [ ] - Arrays (L/U → home row!)
+- **🔶** = Colon : - Type annotations (Y → home row!)
+- **⭐** = Asterisk * - Multiply, Pointer (; → home row!)
+- **🤝** = Ampersand & - Reference, AND (' → home row!)
+
+**Top Row (Easy Reach)**:
 - **💥** = Exclamation (!) - Alerts, Not operator
 - **📧** = At symbol (@) - Email, Decorators  
-- **🏷️** = Hash (#) - Tags, Preprocessor
-- **💰** = Dollar ($) - Variables, Currency
-- **📊** = Percent (%) - Modulo, Statistics
-- **⬆️** = Caret (^) - Exponent, XOR
-- **🤝** = Ampersand (&) - Reference, Logical AND
-- **⭐** = Asterisk (*) - Multiply, Pointer
+- **📂** = Backslash \ - Escapes, Paths (now reachable!)
+- **📁** = Forward slash / - Division, Paths
 - **🔁** = Minus (-) - Subtraction, Hyphen
 - **➕** = Plus (+) - Addition, Concatenation
-- **📦** = Parentheses () - Function calls, Grouping
-- **📋** = Square brackets [] - Arrays, Indexing
-- **🔧** = Curly braces {} - Objects, Code blocks
-- **@sym** = Symbol Layer activator
+
+**Bottom Row (Index/Middle Fingers)**:
+- **📐** = Angle brackets < > - Comparisons, HTML
+- **💰** = Dollar ($) - Variables, Currency  
+- **📊** = Percent (%) - Modulo, Statistics
+- **⬆️** = Caret (^) - Exponent, XOR
+- **🌊** = Tilde ~ - Home directory (now accessible!)
+- **💬** = Double quote " - Strings
+- **💭** = Single quote ' - Characters
+- **❓** = Question mark ? - Conditionals
+
+**New Accessibility Features**:
+- **🔗** = Underscore _ - Variable naming (moved to home row!)
+- **🔀** = Pipe | - Logical OR, Unix pipes (now reachable!)
+- All symbols now within comfortable finger reach for smaller hands
+- Reduced pinky strain by moving common symbols to stronger fingers
+- Balanced symbol distribution between both hands
 
 ## 🗝️ Activation Method
 
@@ -67,50 +88,68 @@ The Symbol Layer features:
 
 ## 🔤 Symbol Categories
 
-### 🔢 Shifted Numbers (Top Row)
+### 🔢 Optimized Symbol Layout 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                   SHIFTED NUMBER ROW                       │
+│              ERGONOMIC SYMBOL DISTRIBUTION                 │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│ Position │ Key │ Symbol │ Name        │ Programming Use      │
-│───────────────────────────────────────────────────────────  │
-│ Q        │ !   │ 💥     │ Exclamation │ NOT, Assert, Alert   │
-│ W        │ @   │ 📧     │ At Sign     │ Decorator, Email     │
-│ F        │ #   │ 🏷️     │ Hash        │ Preprocessor, Tags   │
-│ P        │ $   │ 💰     │ Dollar      │ Variables, jQuery    │
-│ B        │ %   │ 📊     │ Percent     │ Modulo, Statistics   │
-│ J        │ ^   │ ⬆️     │ Caret       │ XOR, Exponent        │
-│ L        │ &   │ 🤝     │ Ampersand   │ Reference, AND       │
-│ U        │ *   │ ⭐     │ Asterisk    │ Multiply, Pointer    │
-│ Y        │ -   │ 🔁     │ Minus       │ Subtract, Hyphen     │
-│ ;        │ +   │ ➕     │ Plus        │ Add, Concatenate     │
+│ Row      │ Position │ Symbol │ Name        │ Finger Strength │
+│──────────────────────────────────────────────────────────── │
+│ **TOP**  │ Q/W      │ ! @    │ Alert/Email │ Strong fingers   │
+│          │ F/P      │ { }    │ Braces      │ Home row power!  │
+│          │ B        │ \      │ Backslash   │ Index finger     │
+│          │ J        │ /      │ Slash       │ Index finger     │
+│          │ L/U      │ ( )    │ Parentheses │ Home row power!  │
+│          │ Y        │ = ;    │ Equals/Semi │ Home row power!  │
 │                                                             │
-│ Memory Aid: Follows QWERTY number row pattern             │
+│ **HOME** │ A        │ -      │ Minus       │ Strongest finger │
+│          │ R        │ _      │ Underscore  │ Index finger     │
+│          │ S/T      │ [ ]    │ Brackets    │ Middle fingers   │
+│          │ G        │ `      │ Backtick    │ Index finger     │
+│          │ M        │ \      │ Backslash   │ Index finger     │
+│          │ N/E      │ : +    │ Colon/Plus  │ Strong fingers   │
+│          │ I/O      │ * &    │ Star/Amp    │ Strong fingers   │
+│                                                             │
+│ **BOT**  │ Z/X      │ < >    │ Angles      │ Index/Middle     │
+│          │ C/D      │ $ %    │ Dollar/Pct  │ Middle fingers   │
+│          │ V        │ ^      │ Caret       │ Index finger     │
+│          │ K        │ ~      │ Tilde       │ Index finger     │
+│          │ H/,      │ " '    │ Quotes      │ Index finger     │
+│          │ .        │ ?      │ Question    │ Middle finger    │
+│                                                             │
+│ **Key Improvement**: Frequent symbols moved to home row    │
+│ **Balance**: Load distributed across both hands equally    │
+│ **Access**: All symbols reachable without pinky strain     │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 📦 Bracket Pairs (Right Hand)
+### 📦 Ergonomic Bracket System
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    BRACKET GROUPINGS                       │
+│                 BALANCED BRACKET PLACEMENT                 │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│ Type          │ Open │ Close │ Position │ Usage            │
+│ Type          │ Open │ Close │ Position │ Finger Strength  │
 │───────────────────────────────────────────────────────────  │
-│ Parentheses   │ (    │ )     │ M/,      │ Function calls   │
-│ Square        │ [    │ ]     │ ./;      │ Arrays, Index    │
-│ Curly         │ {    │ }     │ Left     │ Objects, Blocks  │
+│ **Curly**     │ {    │ }     │ F/P      │ Index (strong!)  │
+│ **Parentheses**│ (   │ )     │ L/U      │ Middle (good!)   │
+│ **Square**    │ [    │ ]     │ S/T      │ Ring (adequate!) │
 │                                                             │
-│ Logical Pairing:                                           │
-│ • () for function calls: func(arg1, arg2)                 │
-│ • [] for array access: array[index]                       │
-│ • {} for code blocks: if (condition) { code }             │
+│ **Ergonomic Advantages**:                                  │
+│ • Most frequent {} moved to strongest index fingers       │
+│ • () positioned for comfortable middle finger access      │
+│ • [] accessible without pinky strain                      │
+│ • All pairs now on home row for minimal hand movement     │
 │                                                             │
-│ Finger Assignment:                                          │
-│ • Index finger: M({) and ,(})                             │
-│ • Middle finger: .(])                                       │
-│ • Ring finger: ;(])                                        │
+│ **Programming Flow Examples**:                             │
+│ • Objects: const obj = @sym+F { key: value } @sym+P       │
+│ • Functions: function() @sym+L ( param ) @sym+U           │
+│ • Arrays: const arr = @sym+S [ 1, 2, 3 ] @sym+T          │
+│                                                             │
+│ **Frequency-Based Design**: Most used → strongest fingers │
+│ **Bilateral Balance**: Pairs distributed across hands     │
+│ **Reduced Travel**: All on home row eliminates reaches    │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -283,25 +322,35 @@ sym (layer-toggle sym)                  ; Left Shift activates symbol layer
 fun (layer-toggle sym)                  ; Right Shift also activates symbols
 ```
 
-## 📊 Efficiency Benefits
+## 📊 Efficiency Benefits - **Optimized for Smaller Hands**
 
-### Programming Productivity
+### **🤏 Small Hand Ergonomics**
+- **Home row symbol placement** eliminates dangerous pinky reaches
+- **Frequency-based positioning** puts common symbols on strong fingers  
+- **Bilateral load balancing** prevents single-hand strain
+- **Zero pinky dependency** for essential programming symbols
+- **Comfortable finger travel** - no stretching or uncomfortable positions
+
+### **⚡ Programming Productivity** 
 - **Logical symbol groupings** reduce cognitive load
-- **Familiar number row pattern** for shifted symbols  
-- **Bracket pairs positioned** for natural typing flow
+- **Home row brackets** for faster nested structure creation
+- **Balanced hand usage** prevents repetitive strain injuries
 - **Single layer access** for complex expressions
+- **Missing symbol addition** (underscore, pipe, backslash) improves completeness
 
-### Typing Flow Advantages
-- **Minimal hand movement** from home position
-- **Strong fingers** handle most common symbols
-- **Intuitive pairing** of opening/closing brackets
-- **Fast symbol sequences** with single layer hold
+### **🎯 Typing Flow Advantages**
+- **Minimal hand movement** from home position - symbols come to your fingers
+- **Strongest fingers handle frequent symbols** - { } ( ) = ; on home row
+- **Intuitive pairing** of opening/closing brackets on same finger groups
+- **Fast symbol sequences** with single @sym layer hold
+- **Natural alternating hands** for symbol combinations
 
-### Development Features
-- **Complete symbol coverage** for most programming languages
-- **Mathematical operator access** for calculations
-- **Text formatting symbols** for documentation
-- **Efficient bracket management** for nested structures
+### **💻 Development Features**
+- **Complete symbol coverage** for all programming languages
+- **Mathematical operator accessibility** without strain
+- **Text formatting symbols** easily reachable
+- **Efficient bracket management** for deeply nested structures
+- **Professional typing comfort** for extended coding sessions
 
 ## 📚 Learning Path
 
