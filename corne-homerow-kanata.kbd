@@ -116,7 +116,7 @@
   h h                                                  ;; H key - no modifier
 
   ;; Layer switching keys
-  nav (layer-toggle extend)             ;; Caps -> Extended nav layer
+  nav (tap-hold 200 200 esc (layer-toggle extend))  ;; Caps: tap=Esc, hold=Extended nav
   ;; num (layer-toggle num)                ;; Number layer (removed - use space bar hold) 
   sym (layer-toggle sym)                ;; Symbol layer
   fun (layer-toggle fun)                ;; Function layer

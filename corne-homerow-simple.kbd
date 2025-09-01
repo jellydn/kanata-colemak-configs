@@ -89,7 +89,7 @@
   o (tap-hold 200 300 o rmet)    ;; O / GUI (Cmd)
 
   ;; Layer switching keys
-  nav (layer-toggle extend)
+  nav (tap-hold 200 200 esc (layer-toggle extend))  ;; Caps: tap=Esc, hold=Extended nav
   ;; num (layer-toggle num)                ;; Number layer (removed - use space bar hold) 
   sym (layer-toggle sym)
   fun (layer-toggle fun)

@@ -74,7 +74,7 @@
 ;; Aliases for cleaner layer definitions
 (defalias
   ;; Extend layer toggle on Caps Lock (tap for Caps, hold for Extend)
-  ext  (tap-hold 200 200 caps (layer-toggle extend))
+  ext  (tap-hold 200 200 esc (layer-toggle extend))  ;; Caps: tap=Esc, hold=Extend
   
   ;; Layer switching aliases (use Caps + number)
   lq   (layer-switch qwerty)      ;; Switch to QWERTY
