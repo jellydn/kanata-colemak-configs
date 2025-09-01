@@ -78,8 +78,8 @@
 ;; Left hand holds tab, right hand: IJKL=movement, QW=clicks, NM,.=scroll
 (deflayer mouse
   _       _    _    _    _    _    _    _    _    _    _    _    _    _
-  _       @mq  @mw  _    _    _    _    _    @mi  _    _    _    _    _
-  _       _    _    _    _    _    _    @mj  @mk  @ml  _    _    _    _
+  _       _    _    _    _    _    _    _    @mi  _    _    _    _    _
+  _       @mq  @mw  _    _    _    _    @mj  @mk  @ml  _    _    _    _
   _       _    _    _    _    _    _    _    _    _    _    _    _
   _       _    _    _    _    _    @mn  @msm @mcom @mdot _    _
   _       _    _              _              _    _    _    _
@@ -161,10 +161,10 @@
   mk   (movemouse-down 1 1)       ;; Mouse move down (K key)
   ml   (movemouse-right 1 1)      ;; Mouse move right (L key)
   
-  ;; Mouse wheel scrolling - NM,. corrected directions (minimal steps)
+  ;; Mouse wheel scrolling - corrected directions for intuitive use
   mn   (mwheel-left 100 6)        ;; Mouse wheel left (N key)
-  msm  (mwheel-up 100 6)          ;; Mouse wheel down (M key - swapped direction)  
-  mcom (mwheel-down 100 6)        ;; Mouse wheel up (comma key - swapped direction)
+  msm  (mwheel-down 100 6)        ;; Mouse wheel down (M key)  
+  mcom (mwheel-up 100 6)          ;; Mouse wheel up (comma key)
   mdot (mwheel-right 100 6)       ;; Mouse wheel right (period key)
   
   ;; Mouse layer activation - double-tap tab for mouse mode
