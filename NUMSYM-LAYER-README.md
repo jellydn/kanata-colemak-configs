@@ -1,14 +1,15 @@
-# 🔢 Number Layer - Ergonomic Numpad
+# 🔢 Number + Symbol Layer - Unified Programming Layer
 
-The **Number Layer** transforms your right hand into a comfortable numpad, activated by holding the Space bar (@spc). This layer provides ergonomic numeric input without reaching for a separate numpad or the top number row, plus includes the hash symbol (#) for its intuitive Shift+3 relationship.
+The **Number + Symbol Layer** combines ergonomic numpad functionality with essential programming symbols in one unified layer, activated by holding the Space bar (@spc). This layer eliminates the need for separate number and symbol layer activations, providing everything you need for programming in one convenient location.
 
 ## 🎯 Overview
 
-The Number Layer features:
-- **Right-hand numpad** positioned naturally under your fingers
-- **Zero key** placed logically with other numbers
-- **Space bar activation** for ergonomic access
-- **Minimal reach** from home row position
+The unified Number + Symbol Layer features:
+- **Right-hand numpad** positioned naturally under your fingers (7,8,9,4,5,6,1,2,3,0)
+- **Essential programming symbols** on left hand for balanced typing
+- **Hash symbol (#)** logically placed with numbers (Shift+3 relationship)
+- **Single activation** via Space bar hold - no more layer switching!
+- **Minimal reach** from home row position for maximum efficiency
 
 ## 🎨 Visual Layout
 
@@ -18,42 +19,63 @@ The Number Layer features:
 ├─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──────┤
 │ ---    │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ ---  │
 ├────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬────┤
-│ ---      │ --- │ --- │ --- │ --- │ --- │ --- │ 🔢7 │ 🔢8 │ 🔢9 │ 🏷️# │ --- │ --- │ ---│
+│ ---      │ 💥! │ 📧@ │ 🔧{ │ 🔧} │ 📂\ │ 📁/ │ 🔢7 │ 🔢8 │ 🔢9 │ 🏷️# │ --- │ --- │ ---│
 ├──────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴────┤
-│ ---        │ --- │ --- │ --- │ --- │ --- │ --- │ 🔢4 │ 🔢5 │ 🔢6 │ 🔢0 │ --- │ ---    │
+│ ---        │ 🔁- │ 🔗_ │ 📋[ │ 📋] │ 🎵` │ 📂\ │ 🔢4 │ 🔢5 │ 🔢6 │ 🔢0 │ --- │ ---    │
 ├────────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴────────┤
-│ ---          │ --- │ --- │ --- │ --- │ --- │ --- │ 🔢1 │ 🔢2 │ 🔢3 │ --- │ ---        │
+│ ---          │ 📐< │ 📐> │ 💰$ │ 📊% │ ⬆️^ │ 🌊~ │ 🔢1 │ 🔢2 │ 🔢3 │ --- │ ---        │
 ├───────┬──────┴─┬───┴───┬─┴─────┴─────┴─────┴─────┴─┬───┴───┬─┴────┬─┴──────┬─┴────┬───┤
 │ ---   │ ---    │🔢@num │          ⏎ ENTER          │ ---   │ ---  │  ---   │ ---  │   │
 └───────┴────────┴───────┴────────────────────────────┴───────┴──────┴────────┴──────┴───┘
 ```
 
-### 🏷️ Legend
-- **🔢** = Number input
+### 🏷️ Legend - **Unified Programming Layer**
+**Numbers (Right Hand)**:
+- **🔢** = Number input (7,8,9,4,5,6,1,2,3,0)
 - **🏷️** = Hash symbol (#) - Shift+3 equivalent
-- **@spc** = Space bar hold activates number layer
+
+**Symbols (Left Hand)**:
+- **💥** = Exclamation (!) - Alerts, assertions
+- **📧** = At symbol (@) - Email, decorators  
+- **🔧** = Braces { } - Code blocks, objects
+- **📁** = Forward slash / - Division, paths
+- **🔁** = Minus (-) - Subtraction, hyphen
+- **🔗** = Underscore _ - Variable naming
+- **📋** = Square brackets [ ] - Arrays, indexing
+- **🎵** = Backtick ` - Template literals
+- **📂** = Backslash \ - Escapes, paths
+- **📐** = Angle brackets < > - Comparisons, HTML
+- **💰** = Dollar ($) - Variables, currency
+- **📊** = Percent (%) - Modulo, statistics
+- **⬆️** = Caret (^) - Exponent, XOR
+- **🌊** = Tilde ~ - Home directory
+
+**Activation**: 
+- **@spc** = Space bar hold activates unified layer
 
 ## 🗝️ Activation Methods
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  NUMBER LAYER ACCESS                   │
+│                UNIFIED PROGRAMMING LAYER ACCESS        │
 ├─────────────────────────────────────────────────────────┤
 │                                                         │
 │ Activation: Hold Space Bar (@spc)                      │
-│ Type: tap-hold (tap=space, hold=number layer)         │
+│ Type: tap-hold (tap=space, hold=numsym layer)         │
 │ Timing: 200ms activation delay                         │
 │ Return: Release to return to Base Layer                │
 │                                                         │
 │ Usage Pattern:                                          │
-│ 1. Hold Space Bar for numbers                          │
-│ 2. Press desired keys (7,8,9,#,4,5,6,0,1,2,3)         │
-│ 3. Release Space Bar                                    │
+│ 1. Hold Space Bar for numbers + symbols               │
+│ 2. Left hand: symbols (!,@,{,},[,],etc.)             │
+│ 3. Right hand: numbers (7,8,9,#,4,5,6,0,1,2,3)       │
+│ 4. Release Space Bar                                    │
 │                                                         │
 │ Benefits:                                               │
-│ • Ergonomic thumb access                               │
-│ • No hand movement required                            │
-│ • Natural integration with typing flow                 │
+│ • Single layer for all programming input              │
+│ • No more layer switching between numbers/symbols     │
+│ • Balanced left/right hand usage                      │
+│ • Complete programming toolkit in one location        │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -281,10 +303,10 @@ ralt (layer-toggle num)                     ; Right Alt also activates numbers
 
 - [**Base Layer Guide**](./BASE-LAYER-README.md) - Foundation with GACS modifiers
 - [**Extend Layer Guide**](./EXTEND-LAYER-README.md) - Navigation and shortcuts  
-- [**Symbol Layer Guide**](./SYMBOL-LAYER-README.md) - Programming symbols
+- This guide covers the unified number + symbol layer
 - [**Function Layer Guide**](./FUNCTION-LAYER-README.md) - F1-F12 keys
 - [**GACS System Guide**](./GACS-SYSTEM-README.md) - Home row modifier theory
 
 ---
 
-**🔢 The Number Layer: Your right-hand numpad - hold Space and calculate away!**
+**🔢 The Number + Symbol Layer: Your unified programming toolkit - hold Space and code with power!**

@@ -309,8 +309,7 @@ r (tap-hold-except-keys 250 250 r lmet (a s t))  ; R → CMD
 ## 🔗 Related Documentation
 
 - [**Extend Layer Guide**](./EXTEND-LAYER-README.md) - Navigation and shortcuts
-- [**Number Layer Guide**](./NUMBER-LAYER-README.md) - NumPad and numbers
-- [**Symbol Layer Guide**](./SYMBOL-LAYER-README.md) - Programming symbols
+- [**Number + Symbol Layer Guide**](./NUMSYM-LAYER-README.md) - Unified programming layer
 - [**Function Layer Guide**](./FUNCTION-LAYER-README.md) - F1-F12 keys
 - [**GACS Deep Dive**](./GACS-SYSTEM-README.md) - Advanced home row mod theory
 

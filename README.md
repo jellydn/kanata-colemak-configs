@@ -70,8 +70,7 @@ This repository contains three distinct Kanata configurations designed for diffe
 ├── 📚 DOCUMENTATION  
 ├── BASE-LAYER-README.md              # Base layer with GACS system
 ├── EXTEND-LAYER-README.md            # Navigation and shortcuts
-├── NUMBER-LAYER-README.md            # Numpad layer guide
-├── SYMBOL-LAYER-README.md            # Programming symbols
+├── NUMSYM-LAYER-README.md            # Unified numbers + symbols layer
 ├── FUNCTION-LAYER-README.md          # F-key layer guide
 ├── GACS-SYSTEM-README.md             # Home row modifier theory
 ├── KANATA-CONFIG-README.md           # Master configuration guide
@@ -101,16 +100,13 @@ Each layer includes comprehensive visual documentation with ASCII keyboard layou
 └──────┴───────┴───────┴────────────────────────────┴───────┴──────┴────────┴──────────┘
 ```
 
-**Legend**: 🔵 = Home Row Modifiers | 🧭 = Extend Layer (tap Caps=Esc, hold=Extend+Tab access) | 🔢 = Number Layer (Space hold) | 🔣 = Symbol Layer | 🔧 = Function Layer
+**Legend**: 🔵 = Home Row Modifiers | 🧭 = Extend Layer (tap Caps=Esc, hold=Extend+Tab access) | 🔢 = Number + Symbol Layer (Space hold) | 🔧 = Function Layer
 
 ### 🧭 Extend Layer - Navigation Powerhouse  
 Arrow keys, shortcuts, Tab access, and navigation positioned ergonomically. **New**: Caps Lock is dual-function (tap=Esc, hold=Extend layer).
 
-### 🔢 Number Layer - Right-Hand Numpad
-Traditional numpad layout accessible via Space bar hold for ergonomic number entry.
-
-### 🔣 Symbol Layer - Programming Symbols
-All programming symbols and brackets positioned logically for development work.
+### 🔢 Number + Symbol Layer - Unified Programming Layer
+Combined numpad and programming symbols accessible via Space bar hold - no more layer switching between numbers and symbols!
 
 ## 🌟 Key Features
 
@@ -123,8 +119,7 @@ All programming symbols and brackets positioned logically for development work.
 ### Layer System
 - **Base Layer**: Colemak Mod-DH with home row modifiers
 - **Extend Layer**: Navigation, shortcuts, and browser controls
-- **Number Layer**: Right-hand numpad and numeric input
-- **Symbol Layer**: Programming symbols and mathematical operators  
+- **Number + Symbol Layer**: Unified programming layer with numpad and symbols
 - **Function Layer**: F1-F12 keys accessible from home position
 
 ### Web Visualizer

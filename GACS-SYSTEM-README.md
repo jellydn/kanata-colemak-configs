@@ -400,8 +400,7 @@ Solutions:
 
 - [**Base Layer Guide**](./BASE-LAYER-README.md) - Foundation layer implementation
 - [**Extend Layer Guide**](./EXTEND-LAYER-README.md) - Navigation shortcuts using GACS
-- [**Number Layer Guide**](./NUMBER-LAYER-README.md) - Numeric input system
-- [**Symbol Layer Guide**](./SYMBOL-LAYER-README.md) - Programming symbols  
+- [**Number + Symbol Layer Guide**](./NUMSYM-LAYER-README.md) - Unified programming layer  
 - [**Function Layer Guide**](./FUNCTION-LAYER-README.md) - F1-F12 access
 
 ---

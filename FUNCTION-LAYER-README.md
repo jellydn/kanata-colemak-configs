@@ -304,8 +304,7 @@ menu (layer-toggle fun)                 ; Menu key activates functions
 ## 🔗 Related Documentation
 
 - [**Base Layer Guide**](./BASE-LAYER-README.md) - Foundation with GACS modifiers
-- [**Number Layer Guide**](./NUMBER-LAYER-README.md) - Numeric input system  
-- [**Symbol Layer Guide**](./SYMBOL-LAYER-README.md) - Programming symbols
+- [**Number + Symbol Layer Guide**](./NUMSYM-LAYER-README.md) - Unified programming layer
 - [**Extend Layer Guide**](./EXTEND-LAYER-README.md) - Navigation and shortcuts
 - [**GACS System Guide**](./GACS-SYSTEM-README.md) - Home row modifier theory
 
