@@ -76,7 +76,7 @@
 (defalias
   ;; Home Row Mods - GACS symmetric layout (GUI/Alt/Control/Shift)
   ;; Left hand: A(GUI) R(Alt) S(Control) T(Shift)
-  a (tap-hold 200 300 a lmet)    ;; A / GUI (Cmd)
+  a (tap-hold 200 300 a lmet)    ;; A / GUI (Cmd) - simple timing
   r (tap-hold 200 300 r lalt)    ;; R / Alt  
   s (tap-hold 200 300 s lctl)    ;; S / Control
   t (tap-hold 200 300 t lsft)    ;; T / Shift

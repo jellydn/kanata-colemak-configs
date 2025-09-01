@@ -98,7 +98,7 @@
   ;; Home Row Mods (Left Hand) - Bilateral combinations to prevent accidental activation
   ;; These mods DON'T activate when followed by same-hand keys (prevents typing rolls)
   ;; Left hand mods - GACS (GUI/Alt/Control/Shift) symmetric layout
-  a (tap-hold-except-keys 250 250 a lmet (r s t))  ;; A / GUI (Cmd) - except adjacent home row
+  a (tap-hold-except-keys 250 250 a lmet (r s))    ;; A / GUI (Cmd) - except adjacent home row
   r (tap-hold-except-keys 250 250 r lalt (a s t))  ;; R / Alt - except adjacent home row
   s (tap-hold-except-keys 250 250 s lctl (a r t))  ;; S / Control - except adjacent home row  
   t (tap-hold-except-keys 200 200 t lsft (a r s))  ;; T / Shift - except adjacent home row

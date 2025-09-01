@@ -86,21 +86,21 @@ Each layer includes comprehensive visual documentation with ASCII keyboard layou
 ├─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──────┤
 │   TAB  │  Q  │  W  │  F  │  P  │  B  │  J  │  L  │  U  │  Y  │  ;: │  [{ │  ]} │  \|  │
 ├────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬────┤
-│🧭 @nav   │🔵A* │🔵R* │🔵S* │🔵T* │  G  │🔵M* │🔵N* │🔵E* │🔵I* │🔵O* │  '  │ ENTER│
+│🧭 @nav   │🔵A* │🔵R* │🔵S* │🔵T* │  G  │  M  │🔵N* │🔵E* │🔵I* │🔵O* │  '  │ ENTER│
 ├──────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴───────┤
-│🔣 @sym     │  Z  │  X  │  C  │  D  │  V  │  K  │🔵H* │  ,< │  .> │  /? │🔧 @fun   │
+│🔣 @sym     │  Z  │  X  │  C  │  D  │  V  │  K  │  H  │  ,< │  .> │  /? │🔧 @fun   │
 ├──────┬─────┴─┬───┴───┬─┴─────┴─────┴─────┴─────┴─┬───┴───┬─┴────┬─┴──────┬─┴────────┤
-│ LCTL │ LMET  │🔢@num │       🔵@spc (Space)       │ RALT  │ RMET │  MENU  │   RCTL   │
+│ LCTL │ LMET  │ LALT │       🔵@spc (Space)       │ RALT  │ RMET │  MENU  │   RCTL   │
 └──────┴───────┴───────┴────────────────────────────┴───────┴──────┴────────┴──────────┘
 ```
 
-**Legend**: 🔵 = Home Row Modifiers | 🧭 = Extend Layer | 🔢 = Number Layer | 🔣 = Symbol Layer | 🔧 = Function Layer
+**Legend**: 🔵 = Home Row Modifiers | 🧭 = Extend Layer (tap Caps=Esc, hold=Extend+Tab access) | 🔢 = Number Layer (Space hold) | 🔣 = Symbol Layer | 🔧 = Function Layer
 
-### 🧭 Extend Layer - Navigation Powerhouse
-Arrow keys, shortcuts, and navigation positioned ergonomically under your right hand.
+### 🧭 Extend Layer - Navigation Powerhouse  
+Arrow keys, shortcuts, Tab access, and navigation positioned ergonomically. **New**: Caps Lock is dual-function (tap=Esc, hold=Extend layer).
 
 ### 🔢 Number Layer - Right-Hand Numpad
-Traditional numpad layout accessible via Space bar or Left Alt.
+Traditional numpad layout accessible via Space bar hold for ergonomic number entry.
 
 ### 🔣 Symbol Layer - Programming Symbols
 All programming symbols and brackets positioned logically for development work.

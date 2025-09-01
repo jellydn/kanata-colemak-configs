@@ -18,9 +18,7 @@ The **GACS System** (GUI-Alt-Control-Shift) is a symmetric home row modifier lay
 │  │ R → ⌥ (Alt)     │   ↔    │ I → ⌥ (Alt)             │          │
 │  │ S → ⌃ (Control) │   ↔    │ E → ⌃ (Control)         │          │
 │  │ T → ⇧ (Shift)   │   ↔    │ N → ⇧ (Shift)           │          │
-│  └─────────────────┘        │ M → ⇧ (Shift) - Extra   │          │
-│                             │ H → ⇧ (Shift) - Extra   │          │
-│                             └─────────────────────────┘          │
+│  └─────────────────┘        └─────────────────────────┘          │
 │                                                                  │
 │ Benefits:                                                        │
 │ • Both hands can access all modifiers                           │
@@ -34,8 +32,10 @@ The **GACS System** (GUI-Alt-Control-Shift) is a symmetric home row modifier lay
 
 ### Tap-Hold Behavior
 Each home row key serves **dual functions**:
-- **Tap**: Types the letter normally (a, r, s, t, m, n, e, i, o, h)
+- **Tap**: Types the letter normally (a, r, s, t, n, e, i, o)
 - **Hold**: Activates modifier (⌘, ⌥, ⌃, ⇧) after timing threshold
+
+**Note**: M and H keys are simple keys without modifier functionality for cleaner typing.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -72,12 +72,12 @@ Each home row key serves **dual functions**:
 
 ### Timing Configuration
 ```
-Index Fingers (T, M, N): 200ms
+Index Fingers (T, N): 200ms
 ├─ Stronger fingers can handle faster activation
 ├─ Most common shortcuts (Shift+letter)
 └─ Reduced delay for efficiency
 
-Other Fingers (A, R, S, E, I, O, H): 250ms  
+Other Fingers (A, R, S, E, I, O): 250ms  
 ├─ Safer timing for weaker fingers
 ├─ Prevents accidental activation during typing
 └─ Balance between responsiveness and accuracy
@@ -97,23 +97,26 @@ Fast typing can accidentally trigger modifiers when rolling through same-hand le
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │ Left Hand Prevention Chain:                                     │
-│ A ↛ R, S, T    (A won't activate ⌘ if followed by R, S, or T)  │
+│ A ↛ R, S       (A won't activate ⌘ if followed by R, S)        │
 │ R ↛ A, S, T    (R won't activate ⌥ if followed by A, S, or T)  │ 
 │ S ↛ A, R, T    (S won't activate ⌃ if followed by A, R, or T)  │
 │ T ↛ A, R, S    (T won't activate ⇧ if followed by A, R, or S)  │
 │                                                                 │
 │ Right Hand Prevention Chain:                                    │
-│ M ↛ N, E, I, O    (M won't activate ⇧ if followed by N,E,I,O) │
-│ N ↛ M, E, I, O    (N won't activate ⇧ if followed by M,E,I,O) │
-│ E ↛ M, N, I, O    (E won't activate ⌃ if followed by M,N,I,O) │
-│ I ↛ M, N, E, O    (I won't activate ⌥ if followed by M,N,E,O) │
-│ O ↛ M, N, E, I    (O won't activate ⌘ if followed by M,N,E,I) │
-│ H ↛ M, N, E, I, O (H won't activate ⇧ if followed by others)  │
+│ N ↛ I, O          (N won't activate ⇧ if followed by I,O)    │
+│ E ↛ N, I, O       (E won't activate ⌃ if followed by N,I,O)  │
+│ I ↛ N, E, O       (I won't activate ⌥ if followed by N,E,O)  │
+│ O ↛ N, E, I       (O won't activate ⌘ if followed by N,E,I)  │
+│                                                                 │
+│ M and H: Regular keys - no modifier behavior                   │
 │                                                                 │
 │ Cross-Hand Combinations Still Work:                            │
 │ A + N = ⌘N ✅    (Different hands, no prevention)              │
 │ R + O = ⌥O ✅    (Different hands, no prevention)              │
 │ S + I = ⌃I ✅    (Different hands, no prevention)              │
+│                                                                 │
+│ Special Case: Colemak-DH Letter Positions                     │
+│ A + T = ⌘B ✅    (T position has 'b' in Colemak-DH)           │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -145,10 +148,10 @@ Fast typing can accidentally trigger modifiers when rolling through same-hand le
 ├─ OR: A (⌘) held + A tapped = tap-hold distinction  
 └─ Result: ⌘A executed successfully
 
-⌘T (New Tab):  
-├─ A (⌘) from left + T from left = same hand, but...
-├─ A held first, then T tapped = modifier already active
-└─ Result: ⌘T executed successfully
+⌘B (Bold Text in Colemak-DH):  
+├─ A (⌘) held + T (where 'b' is) tapped  
+├─ Fixed: Removed T from A's prevention list
+└─ Result: ⌘B executed successfully
 
 Cross-hand shortcuts (most common):
 ├─ A (⌘) + any right hand key = works perfectly
@@ -166,13 +169,13 @@ Cross-hand shortcuts (most common):
 │                                                                 │
 │     Q    W    F    P    B    J    L    U    Y    ;              │
 │                                                                 │
-│    🔵A  🔵R  🔵S  🔵T   G   🔵M  🔵N  🔵E  🔵I  🔵O             │
-│    ⌘    ⌥    ⌃    ⇧         ⇧    ⇧    ⌃    ⌥    ⌘             │
-│   250  250  250  200       200  200  250  250  250             │
+│    🔵A  🔵R  🔵S  🔵T   G    M   🔵N  🔵E  🔵I  🔵O             │
+│    ⌘    ⌥    ⌃    ⇧              ⇧    ⌃    ⌥    ⌘             │
+│   250  250  250  200            200  250  250  250             │
 │                                                                 │
-│     Z    X    C    D    V    K   🔵H   ,    .    /              │
-│                                   ⇧                             │
-│                                  250                            │
+│     Z    X    C    D    V    K    H    ,    .    /              │
+│                                                                 │
+│                                                                 │
 │                                                                 │
 │ Legend:                                                         │
 │ 🔵 = Home row modifier (tap letter, hold modifier)             │
@@ -189,13 +192,13 @@ Left Hand Modifiers (ARST):
 ├─ S (⌃): Middle - Control for system and text commands  
 └─ T (⇧): Index - Shift on strongest finger for capitals
 
-Right Hand Modifiers (MNEI+O+H):
-├─ M (⇧): Index - Mirror left Shift for bilateral typing
-├─ N (⇧): Index - Additional Shift for flexibility
+Right Hand Modifiers (NEI+O):
+├─ N (⇧): Index - Mirror left Shift for bilateral typing
 ├─ E (⌃): Middle - Mirror left Control
 ├─ I (⌥): Ring - Mirror left Alt
-├─ O (⌘): Pinky - Mirror left Cmd/GUI
-└─ H (⇧): Index - Extra Shift for special cases
+└─ O (⌘): Pinky - Mirror left Cmd/GUI
+
+M and H: Regular keys without modifiers
 ```
 
 ## 🚀 Advanced Usage Patterns
@@ -261,18 +264,18 @@ Sentence with shortcuts:
 ```lisp
 (defalias
   ;; Left Hand GACS - Bilateral Prevention
-  a (tap-hold-except-keys 250 250 a lmet (r s t))  ; A/⌘ except R,S,T
+  a (tap-hold-except-keys 250 250 a lmet (r s))    ; A/⌘ except R,S
   r (tap-hold-except-keys 250 250 r lalt (a s t))  ; R/⌥ except A,S,T  
   s (tap-hold-except-keys 250 250 s lctl (a r t))  ; S/⌃ except A,R,T
   t (tap-hold-except-keys 200 200 t lsft (a r s))  ; T/⇧ except A,R,S
 
-  ;; Right Hand GACS - Bilateral Prevention + Extra Shifts
-  m (tap-hold-except-keys 200 200 m rsft (n e i o))  ; M/⇧ except N,E,I,O
-  n (tap-hold-except-keys 200 200 n rsft (m e i o))  ; N/⇧ except M,E,I,O
+  ;; Right Hand GACS - Bilateral Prevention
+  m m                                                  ; M - regular key, no modifier
+  n (tap-hold-except-keys 200 200 n rsft (m i o))    ; N/⇧ except M,I,O
   e (tap-hold-except-keys 250 250 e rctl (m n i o))  ; E/⌃ except M,N,I,O  
   i (tap-hold-except-keys 250 250 i ralt (m n e o))  ; I/⌥ except M,N,E,O
   o (tap-hold-except-keys 250 250 o rmet (m n e i))  ; O/⌘ except M,N,E,I
-  h (tap-hold-except-keys 250 250 h rsft (m n e i o)) ; H/⇧ except all home row
+  h h                                                  ; H - regular key, no modifier
 )
 ```
 

@@ -1,13 +1,13 @@
 # 🔢 Number Layer - Ergonomic Numpad
 
-The **Number Layer** transforms your right hand into a comfortable numpad, activated by holding the Space bar or Left Alt key (@num). This layer provides numeric input without reaching for a separate numpad or the top number row.
+The **Number Layer** transforms your right hand into a comfortable numpad, activated by holding the Space bar (@spc). This layer provides ergonomic numeric input without reaching for a separate numpad or the top number row.
 
 ## 🎯 Overview
 
 The Number Layer features:
 - **Right-hand numpad** positioned naturally under your fingers
 - **Zero key** placed logically with other numbers
-- **Dual activation** via Space bar or Left Alt for flexibility
+- **Space bar activation** for ergonomic access
 - **Minimal reach** from home row position
 
 ## 🎨 Visual Layout
@@ -30,7 +30,7 @@ The Number Layer features:
 
 ### 🏷️ Legend
 - **🔢** = Number input
-- **@num** = Number Layer activator (dual access)
+- **@spc** = Space bar hold activates number layer
 
 ## 🗝️ Activation Methods
 
@@ -39,23 +39,20 @@ The Number Layer features:
 │                  NUMBER LAYER ACCESS                   │
 ├─────────────────────────────────────────────────────────┤
 │                                                         │
-│ Primary: Hold Space Bar (@spc)                         │
+│ Activation: Hold Space Bar (@spc)                      │
 │ Type: tap-hold (tap=space, hold=number layer)         │
 │ Timing: 200ms activation delay                         │
-│                                                         │
-│ Alternative: Hold Left Alt (@num)                      │
-│ Type: layer-toggle (temporary while held)             │
 │ Return: Release to return to Base Layer                │
 │                                                         │
-│ Usage Patterns:                                         │
+│ Usage Pattern:                                          │
 │ 1. Hold Space Bar for numbers                          │
 │ 2. Press desired numeric keys (7,8,9,4,5,6,1,2,3,0)   │
 │ 3. Release Space Bar                                    │
 │                                                         │
-│ Alternative Pattern:                                    │
-│ 1. Hold Left Alt                                       │
-│ 2. Press numeric key positions                         │
-│ 3. Release Left Alt                                     │
+│ Benefits:                                               │
+│ • Ergonomic thumb access                               │
+│ • No hand movement required                            │
+│ • Natural integration with typing flow                 │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -190,10 +187,9 @@ Result: Credit card number with natural spacing
 )
 ```
 
-### Activation Aliases
+### Activation Alias
 ```lisp
-;; Dual access to number layer
-num (layer-toggle num)                      ; Left Alt activates
+;; Space bar access to number layer
 spc (tap-hold 200 200 spc (layer-toggle num)) ; Space bar: tap=space, hold=numbers
 ```
 
@@ -243,7 +239,7 @@ ralt (layer-toggle num)                     ; Right Alt also activates numbers
 - **No top row reaching** for number input
 - **Single layer hold** for multiple digits
 - **Natural finger positions** reduce errors
-- **Dual activation** provides flexibility
+- **Space bar integration** provides ergonomic access
 
 ### Ergonomic Advantages
 - **Hands stay on home row** area
@@ -275,7 +271,7 @@ ralt (layer-toggle num)                     ; Right Alt also activates numbers
 - Goal: Real-world number entry tasks
 
 ### Week 4: Advanced Usage
-- Practice with both activation methods (Space + Left Alt)
+- Practice sustained number entry with space bar hold
 - Combine with calculations and data entry
 - Goal: Full numeric input proficiency
 

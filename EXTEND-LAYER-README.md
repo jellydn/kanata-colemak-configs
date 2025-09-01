@@ -1,6 +1,6 @@
 # 🧭 Extend Layer - Navigation & Shortcuts Powerhouse
 
-The **Extend Layer** transforms your keyboard into a navigation and productivity powerhouse. Activated by holding the Caps Lock key (@nav), it provides ergonomic access to arrow keys, shortcuts, and direct modifiers without the tap-hold delay.
+The **Extend Layer** transforms your keyboard into a navigation and productivity powerhouse. Activated by holding the Caps Lock key (@nav), it provides ergonomic access to arrow keys, shortcuts, and direct modifiers without the tap-hold delay. **New**: Caps Lock is dual-function - tap for instant Escape, hold for Extend layer access.
 
 ## 🎯 Overview
 
@@ -19,11 +19,11 @@ The Extend Layer features:
 ├─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──────┤
 │ ---    │ 🔙  │ 🏠  │ 📋  │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ ---  │
 ├────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬────┤
-│ ---      │ ESC │🌐⬅️ │🔍   │🌐➡️ │ INS │PgUp │HOME │ ⬆️  │ END │MENU │ --- │🔒   │ ---│
+│ **TAB**  │ ESC │🌐⬅️ │🔍   │🌐➡️ │ INS │PgUp │HOME │ ⬆️  │ END │ --- │ --- │ --- │ ---│
 ├──────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴────┤
 │ ---        │ ⌥   │ ⌘   │ ⇧   │ ⌃   │R⌥   │PgDn │ ⬅️  │ ⬇️  │ ➡️  │ DEL │CAPS │ ---    │
 ├────────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴────────┤
-│ ---          │ ✂️  │ 📋  │ TAB │ 📄  │ ↩️  │PgDn │ ⌫   │ ⇧   │ ⌃   │MENU │ ---        │
+│ ---          │ ✂️  │ 📋  │ TAB │ 📄  │ ↩️  │PgDn │ ⌫   │ ⇧   │ ⌃   │ --- │ ---        │
 ├───────┬──────┴─┬───┴───┬─┴─────┴─────┴─────┴─────┴─┬───┴───┬─┴────┬─┴──────┬─┴────┬───┤
 │ ---   │ ---    │ ---   │          ⏎ ENTER          │ ---   │ ---  │  ---   │ ---  │   │
 └───────┴────────┴───────┴────────────────────────────┴───────┴──────┴────────┴──────┴───┘
@@ -48,11 +48,15 @@ The Extend Layer features:
 ├─────────────────────────────────────────────────────────┤
 │                                                         │
 │ Trigger: Hold @nav key (Caps Lock position)            │
-│ Type: layer-toggle (temporary while held)              │
+│ Type: tap-hold (tap=Escape, hold=extend layer)         │
 │ Return: Release @nav to return to Base Layer           │
 │                                                         │
+│ Dual Function:                                          │
+│ • Tap Caps Lock = Instant Escape                       │
+│ • Hold Caps Lock = Extend Layer Access                 │
+│                                                         │
 │ Usage Pattern:                                          │
-│ 1. Hold Caps Lock                                       │
+│ 1. Hold Caps Lock (after ~200ms activates extend)      │
 │ 2. Press desired navigation/shortcut keys               │
 │ 3. Release Caps Lock                                    │
 └─────────────────────────────────────────────────────────┘
@@ -93,6 +97,21 @@ The Extend Layer features:
 └─────────────────────────────────────────────┘
 ```
 
+### 🗂️ Tab Accessibility
+```
+┌─────────────────────────────────────────────┐
+│               TAB ACCESS METHODS                   │
+├─────────────────────────────────────────────┤
+│                                             │
+│ 1. Normal Tab Key (top row, far reach)     │
+│ 2. Caps+Tab (extend layer, same position!) │
+│ 3. Caps+C (extend layer, alternative)      │
+│                                             │
+│ Best Practice: Use Caps+Tab for ergonomic  │
+│ access - same familiar Tab position!       │
+└─────────────────────────────────────────────┘
+```
+
 ### ⌨️ Direct Modifiers (Left Hand)
 ```
 ┌─────────────────────────────────────────────┐
@@ -126,6 +145,9 @@ The Extend Layer features:
 │ C        │ TAB │ tab      │ Tab     │ "C" for "cycle"      │
 │ D        │ 📄  │ @pst     │ ⌘V      │ "D" for "deposit"    │
 │ V        │ ↩️  │ @udo     │ ⌘Z      │ "V" for "revert"     │
+│                                                             │
+│ NEW: Tab Key Access (Q position in extend layer)           │
+│ Q        │ TAB │ tab      │ Tab     │ Ergonomic Tab access  │
 │                                                             │
 │ Muscle Memory: Follows QWERTY ZXCV shortcut positions      │
 └─────────────────────────────────────────────────────────────┘
@@ -260,9 +282,9 @@ Result: Multiple page scrolls with single layer hold
 (deflayer extend
   _       @lq  @lh  @lm  _    _    _    _    _    _    _    _    _
   _       @lq  @lh  @lm  _    _    _    _    _    _    _    _    _    _
-  _       esc  @bk  @fnd @fw  ins  pgup home up   end  menu _    slck _
+  tab     esc  @bk  @fnd @fw  ins  pgup home up   end  _    _    _    _
   _       lalt lmet lsft lctl ralt pgdn lft  down rght del  caps _
-  _       @cut @cpy tab  @pst @udo pgdn bspc lsft lctl menu _
+  _       @cut @cpy tab  @pst @udo pgdn bspc lsft lctl _    _
   _       _    _              ret            _    _    _    _
 )
 ```
@@ -288,7 +310,7 @@ udo  C-z                        ; Undo (Cmd+Z)
 
 ### Activation Alias
 ```lisp
-nav (layer-toggle extend)       ; Toggle extend layer while held
+nav (tap-hold 200 200 esc (layer-toggle extend))  ; Tap=Esc, Hold=Extend layer
 ```
 
 ## 🔧 Customization Options
