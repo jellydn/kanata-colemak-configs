@@ -25,7 +25,7 @@
 
 ;; Source layer - full keyboard
 (defsrc
-  esc     f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  esc     f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  f13
   grv     1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab     q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps    a    s    d    f    g    h    j    k    l    ;    '    ret
@@ -36,9 +36,9 @@
 ;; Base layer: Colemak Mod-DH with Home Row Mods
 ;; Home row: A(Cmd) R(Alt) S(Ctrl) T(Shift) | M(Shift) N(Ctrl) E(Alt) I(Cmd)
 (deflayer base
-  esc     f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  esc     f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  f13
   grv     1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab     q    w    f    p    b    j    l    u    y    ;    [    ]    \
+  @mtab   q    w    f    p    b    j    l    u    y    ;    [    ]    \
   @nav    @a   @r   @s   @t   g    m    @n   @e   @i   @o   '    ret
   lsft    z    x    c    d    v    k    h    ,    .    /    @fun
   lctl    lmet lalt           @spc           ralt rmet menu rctl
@@ -46,7 +46,7 @@
 
 ;; Extended navigation layer (activated by Caps Lock) with home row mods
 (deflayer extend
-  _       @lq  @lh  @lm  _    _    _    _    _    _    _    _    _
+  _       @lq  @lh  @lm  _    _    _    _    _    _    _    _    _    _
   _       @lq  @lh  @lm  _    _    _    _    _    _    _    _    _    _
   tab     esc  @bk  @fnd @fw  ins  pgup home up   end  _    _    _    _
   _       lalt lmet lsft lctl ralt pgdn lft  down rght del  caps _
@@ -56,23 +56,37 @@
 
 ;; Unified Number + Symbol layer (space bar hold)
 (deflayer numsym
-  _       _    _    _    _    _    _    _    _    _    _    _    _
   _       _    _    _    _    _    _    _    _    _    _    _    _    _
-  _       S-7  S-8  S-9  [    ]    \    7    8    9    _    _    _    _
-  _       S-4  S-5  S-6  S-0  `    /    4    5    6    0    _    _
+  _       _    _    _    _    _    _    _    _    _    _    _    _    _
+  _       S-7  S-8  S-9  S-0  [    ]    7    8    9    _    _    _    _
+  _       S-4  S-5  S-6  `    \    /    4    5    6    0    f13  _
   _       S-1  S-2  S-3  -    S--  grv  1    2    3    _    _
   _       _    _              _              _    _    _    _
 )
 
 ;; Function layer (right shift)
 (deflayer fun
-  _       _    _    _    _    _    _    _    _    _    _    _    _
-  _       f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  _
+  _       _    _    _    _    _    _    _    _    _    _    _    _    _
+  _       f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  f13
   _       _    _    _    _    _    _    _    _    _    _    _    _    _
   _       _    _    _    _    _    _    _    _    _    _    _    _
   _       _    _    _    _    _    _    _    _    _    _    _
   _       _    _              _              _    _    _    _
 )
+
+;; Mouse layer - optimized for right-hand operation  
+;; Left hand holds tab, right hand: IJKL=movement, QW=clicks, NM,.=scroll
+(deflayer mouse
+  _       _    _    _    _    _    _    _    _    _    _    _    _    _
+  _       @mq  @mw  _    _    _    _    _    @mi  _    _    _    _    _
+  _       _    _    _    _    _    _    @mj  @mk  @ml  _    _    _    _
+  _       _    _    _    _    _    _    _    _    _    _    _    _
+  _       _    _    _    _    _    @mn  @msm @mcom @mdot _    _
+  _       _    _              _              _    _    _    _
+)
+
+;; Mouse layer activation via modified tab key
+;; Double-tap tab or use with modifier to activate mouse layer
 
 ;; One-shot modifier layer (alternative approach - uncomment to use)
 ;; Access via a dedicated key if you struggle with tap-hold home row mods
@@ -131,4 +145,28 @@
   cpy  C-c                        ;; Copy
   pst  C-v                        ;; Paste
   udo  C-z                        ;; Undo
+  
+  ;; Mouse layer controls - optimized for right-hand operation
+  mou  (layer-toggle mouse)       ;; Toggle mouse layer
+  
+  ;; Mouse clicks - Q/W for left/right (easier reach)
+  mq   mlft                       ;; Mouse left click (Q key)
+  mw   mrgt                       ;; Mouse right click (W key)
+  mm   mmid                       ;; Mouse middle click (M key)
+  
+  ;; Mouse movement - IJKL style (I=up, J=left, K=down, L=right)  
+  ;; Fast movement: 1ms interval, 1 pixel per movement (maximum speed)
+  mi   (movemouse-up 1 1)         ;; Mouse move up (I key)
+  mj   (movemouse-left 1 1)       ;; Mouse move left (J key)
+  mk   (movemouse-down 1 1)       ;; Mouse move down (K key)
+  ml   (movemouse-right 1 1)      ;; Mouse move right (L key)
+  
+  ;; Mouse wheel scrolling - NM,. corrected directions (minimal steps)
+  mn   (mwheel-left 100 6)        ;; Mouse wheel left (N key)
+  msm  (mwheel-up 100 6)          ;; Mouse wheel down (M key - swapped direction)  
+  mcom (mwheel-down 100 6)        ;; Mouse wheel up (comma key - swapped direction)
+  mdot (mwheel-right 100 6)       ;; Mouse wheel right (period key)
+  
+  ;; Mouse layer activation - double-tap tab for mouse mode
+  mtab (tap-dance 200 (tab (layer-toggle mouse))) ;; Double-tap tab for mouse layer
 )

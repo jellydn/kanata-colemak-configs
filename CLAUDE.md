@@ -175,3 +175,41 @@ sudo kanata --cfg corne-homerow-kanata.kbd
 - Full troubleshooting guide: `docs/kanata-macos-troubleshooting.md`
 - Automated fix script: `scripts/kanata-fix.sh`
 - Task documentation: `sessions/tasks/h-fix-kanata-macos-permissions.md`
+
+### F13 Leader Key Support
+
+F13 key has been added as a leader key for applications, accessible via:
+- **Direct access**: F13 key in base layer and function layer
+- **Leader key (optimized for small hands)**: Space + semicolon position (right pinky home)
+- **Positioning**: Located at semicolon position in numsym layer - requires no stretching for small hands
+
+**Usage**: Hold space with left thumb → tap right pinky (semicolon position) → F13 activated
+
+### Mouse Layer - Right-Hand Operation
+
+Complete mouse control layer optimized for small hands with right-hand operation while left hand holds activation key.
+
+#### Activation
+**Double-tap Tab** → Toggles mouse layer on/off
+
+#### Control Layout (Right Hand)
+```
+Tab Row:  [ Q(left click)  W(right click)  _  _  _  _  _  I(↑) ]
+Home Row: [ J(←)  K(↓)  L(→) ]  ← Movement controls
+Bottom:   [ N(scroll ←)  M(scroll ↓)  ,(scroll ↑)  .(scroll →) ] ← Scroll controls
+```
+
+#### Optimized Settings
+- **Movement Speed**: 1ms interval, 1 pixel per step (maximum responsiveness)
+- **Scroll Speed**: 100ms interval, 6 units per step (fine control)
+- **Hand Position**: Left hand holds Tab, right hand controls everything
+- **Small Hands**: All controls clustered within comfortable reach
+
+#### Usage Flow
+1. **Activate**: Double-tap Tab quickly
+2. **Hold**: Keep Tab pressed with left hand (maintains mouse mode)
+3. **Control**: Right hand operates all mouse functions
+   - **Movement**: I=up, J=left, K=down, L=right (vim-style IJKL)
+   - **Clicks**: Q=left click, W=right click (top row, easy reach)
+   - **Scroll**: N=left, M=down, comma=up, period=right (bottom row)
+4. **Exit**: Release Tab (returns to normal typing)
