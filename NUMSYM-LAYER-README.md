@@ -5,10 +5,11 @@ The **Number + Symbol Layer** combines ergonomic numpad functionality with essen
 ## 🎯 Overview
 
 The unified Number + Symbol Layer features:
-- **Right-hand numpad** positioned naturally under your fingers (7,8,9,4,5,6,1,2,3,0)
-- **Essential programming symbols** on left hand for balanced typing
-- **Hash symbol (#)** logically placed with numbers (Shift+3 relationship)
+- **Perfect mirror layout** - shifted symbols (S-1 to S-0) positioned exactly like their numbers
+- **Right-hand numpad** positioned naturally under your fingers (7,8,9,4,5,6,1,2,3,0)  
+- **Left-hand shifted symbols** in mirror positions for instant muscle memory
 - **Single activation** via Space bar hold - no more layer switching!
+- **Intuitive memory system** - want &? Same position as 7. Want #? Same position as 3!
 - **Minimal reach** from home row position for maximum efficiency
 
 ## 🎨 Visual Layout
@@ -19,38 +20,38 @@ The unified Number + Symbol Layer features:
 ├─────┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──────┤
 │ ---    │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ --- │ ---  │
 ├────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬────┤
-│ ---      │ 💥! │ 📧@ │ 🔧{ │ 🔧} │ 📂\ │ 📁/ │ 🔢7 │ 🔢8 │ 🔢9 │ 🏷️# │ --- │ --- │ ---│
+│ ---      │ 🤝& │ ⭐* │ 📦( │ 📋[ │ 📋] │ 📂\ │ 🔢7 │ 🔢8 │ 🔢9 │ --- │ --- │ --- │ ---│
 ├──────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴────┤
-│ ---        │ 🔁- │ 🔗_ │ 📋[ │ 📋] │ 🎵` │ 📂\ │ 🔢4 │ 🔢5 │ 🔢6 │ 🔢0 │ --- │ ---    │
+│ ---        │ 💰$ │ 📊% │ ⬆️^ │ 📦) │ 🎵` │ 📁/ │ 🔢4 │ 🔢5 │ 🔢6 │ 🔢0 │ --- │ ---    │
 ├────────────┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴────────┤
-│ ---          │ 📐< │ 📐> │ 💰$ │ 📊% │ ⬆️^ │ 🌊~ │ 🔢1 │ 🔢2 │ 🔢3 │ --- │ ---        │
+│ ---          │ 💥! │ 📧@ │ 🏷️# │ 🔁- │ 🔗_ │ 🌊~ │ 🔢1 │ 🔢2 │ 🔢3 │ --- │ ---        │
 ├───────┬──────┴─┬───┴───┬─┴─────┴─────┴─────┴─────┴─┬───┴───┬─┴────┬─┴──────┬─┴────┬───┤
 │ ---   │ ---    │🔢@num │          ⏎ ENTER          │ ---   │ ---  │  ---   │ ---  │   │
 └───────┴────────┴───────┴────────────────────────────┴───────┴──────┴────────┴──────┴───┘
 ```
 
-### 🏷️ Legend - **Unified Programming Layer**
-**Numbers (Right Hand)**:
-- **🔢** = Number input (7,8,9,4,5,6,1,2,3,0)
-- **🏷️** = Hash symbol (#) - Shift+3 equivalent
+### 🏷️ Legend - **Perfect Mirror Design for Muscle Memory**
 
-**Symbols (Left Hand)**:
-- **💥** = Exclamation (!) - Alerts, assertions
-- **📧** = At symbol (@) - Email, decorators  
-- **🔧** = Braces { } - Code blocks, objects
-- **📁** = Forward slash / - Division, paths
+**Shifted Numbers (Left Hand) - Mirror Positions**:
+- **Top Row**: 🤝& (S-7) ⭐* (S-8) 📦( (S-9) - mirrors → 7, 8, 9
+- **Middle Row**: 💰$ (S-4) 📊% (S-5) ⬆️^ (S-6) 📦) (S-0) - mirrors → 4, 5, 6, 0
+- **Bottom Row**: 💥! (S-1) 📧@ (S-2) 🏷️# (S-3) - mirrors → 1, 2, 3
+
+**Numbers (Right Hand)**:
+- **🔢** = Direct number input (7,8,9,4,5,6,1,2,3,0)
+
+**Additional Symbols**:
+- **📋** = Square brackets [ ] - Arrays, indexing  
+- **📂** = Backslash \ - Escapes, paths
 - **🔁** = Minus (-) - Subtraction, hyphen
 - **🔗** = Underscore _ - Variable naming
-- **📋** = Square brackets [ ] - Arrays, indexing
 - **🎵** = Backtick ` - Template literals
-- **📂** = Backslash \ - Escapes, paths
-- **📐** = Angle brackets < > - Comparisons, HTML
-- **💰** = Dollar ($) - Variables, currency
-- **📊** = Percent (%) - Modulo, statistics
-- **⬆️** = Caret (^) - Exponent, XOR
+- **📁** = Forward slash / - Division, paths
 - **🌊** = Tilde ~ - Home directory
 
-**Activation**: 
+**Perfect Memory System**: 
+- Want & symbol? Same position as 7
+- Want # symbol? Same position as 3
 - **@spc** = Space bar hold activates unified layer
 
 ## 🗝️ Activation Methods
