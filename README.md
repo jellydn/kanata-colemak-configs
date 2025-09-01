@@ -24,16 +24,23 @@ This repository contains three distinct Kanata configurations designed for diffe
    cd kanata-colemak-configs
    ```
 
-2. Choose your configuration and run:
+2. **Quick Start (Recommended for macOS users):**
+   ```bash
+   # Step 1: Stop Karabiner-Elements to avoid conflicts
+   launchctl stop org.pqrs.service.agent.karabiner_console_user_server
+   launchctl stop org.pqrs.service.agent.karabiner_session_monitor
+   
+   # Step 2: Start Kanata with the advanced configuration
+   sudo kanata --cfg corne-homerow-kanata.kbd
+   ```
+
+3. **Alternative configurations:**
    ```bash
    # For beginners - layout only
    sudo kanata --cfg colemak-dh-macos.kbd
    
    # For intermediate users - basic home row mods
    sudo kanata --cfg corne-homerow-simple.kbd
-   
-   # For advanced users - full GACS system
-   sudo kanata --cfg corne-homerow-kanata.kbd
    ```
 
 ## 📋 Configuration Comparison

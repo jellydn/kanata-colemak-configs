@@ -155,22 +155,21 @@ This project includes Colemak-DH keyboard layout configuration using kanata.
 
 ### Quick Setup
 ```bash
-# Fix common conflicts and start kanata
-./scripts/kanata-fix.sh
+# Recommended: Stop Karabiner-Elements first, then start Kanata
+launchctl stop org.pqrs.service.agent.karabiner_console_user_server
+launchctl stop org.pqrs.service.agent.karabiner_session_monitor
+sudo kanata --cfg corne-homerow-kanata.kbd
 
-# Manual start (if no conflicts)
-sudo kanata --cfg colemak-dh-macos.kbd
+# Alternative: Use automated fix script
+./scripts/kanata-fix.sh
 ```
 
 ### Troubleshooting
 **Common Issue**: `IOHIDDeviceOpen error: exclusive access and device already open`
 
-**Quick Fix**: Karabiner-Elements conflict
-```bash
-launchctl stop org.pqrs.service.agent.karabiner_console_user_server
-launchctl stop org.pqrs.service.agent.karabiner_session_monitor
-sudo kanata --cfg colemak-dh-macos.kbd
-```
+**Root Cause**: Karabiner-Elements conflict (very common on macOS)
+
+**Solution**: Use the Quick Setup commands above to stop Karabiner services first.
 
 **Resources**:
 - Full troubleshooting guide: `docs/kanata-macos-troubleshooting.md`

@@ -4,7 +4,9 @@
 ;; This configuration recreates a Corne keyboard experience on your MacBook
 ;; with home row modifiers and layer switching similar to split keyboards.
 ;;
-;; IMPORTANT: Run with sudo on macOS
+;; QUICK START: Stop Karabiner-Elements first to avoid conflicts
+;; launchctl stop org.pqrs.service.agent.karabiner_console_user_server
+;; launchctl stop org.pqrs.service.agent.karabiner_session_monitor
 ;; sudo kanata --cfg corne-homerow-kanata.kbd
 ;;
 ;; Based on Corne layout philosophy:
