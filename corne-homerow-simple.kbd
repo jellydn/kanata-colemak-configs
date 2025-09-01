@@ -27,9 +27,9 @@
   esc     f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv     1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab     q    w    f    p    b    j    l    u    y    ;    [    ]    \
-  @nav    @a   @r   @s   @t   g    @m   @n   @e   @i   @o   '    ret
+  @nav    @a   @r   @s   @t   g    m    @n   @e   @i   @o   '    ret
   @sym    z    x    c    d    v    k    h    ,    .    /    @fun
-  lctl    lmet @num           @spc           ralt rmet menu rctl
+  lctl    lmet lalt           @spc           ralt rmet menu rctl
 )
 
 ;; Extended navigation layer with home row mods
@@ -82,7 +82,7 @@
   t (tap-hold 200 300 t lsft)    ;; T / Shift
   
   ;; Right hand: GACS on OIEN positions (O=GUI, I=Alt, E=Control, N=Shift)
-  m (tap-hold 200 300 m rsft)    ;; M / Shift (unchanged)
+  m m                            ;; M key - no modifier (avoid conflicts)
   n (tap-hold 200 300 n rsft)    ;; N / Shift
   e (tap-hold 200 300 e rctl)    ;; E / Control
   i (tap-hold 200 300 i ralt)    ;; I / Alt
@@ -90,7 +90,7 @@
 
   ;; Layer switching keys
   nav (layer-toggle extend)
-  num (layer-toggle num) 
+  ;; num (layer-toggle num)                ;; Number layer (removed - use space bar hold) 
   sym (layer-toggle sym)
   fun (layer-toggle fun)
   
