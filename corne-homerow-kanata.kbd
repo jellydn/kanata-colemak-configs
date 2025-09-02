@@ -21,6 +21,14 @@
   allow-hardware-repeat   no
   rapid-event-delay       5
   sequence-timeout        2000
+  
+  ;; Target specific keyboard device - choose one:
+  ;; For MacBook built-in keyboard:
+  ;; macos-dev-names-include ("Apple Internal Keyboard / Trackpad")
+  ;; For external Corne keyboard:
+  macos-dev-names-include ("Corne v4")
+  ;; For all devices except virtual keyboards:
+  ;; macos-dev-names-exclude ("Karabiner DriverKit VirtualHIDKeyboard 1.8.0")
 )
 
 ;; Source layer - full keyboard
@@ -38,7 +46,7 @@
 (deflayer base
   esc     f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  f13
   grv     1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  @mtab   q    w    f    p    b    j    l    u    y    ;    [    ]    \
+  tab     q    w    f    p    b    j    l    u    y    ;    [    ]    \
   @nav    @a   @r   @s   @t   g    m    @n   @e   @i   @o   '    ret
   lsft    z    x    c    d    v    k    h    ,    .    /    @fun
   lctl    lmet lalt           @spc           ralt rmet menu rctl
@@ -74,19 +82,7 @@
   _       _    _              _              _    _    _    _
 )
 
-;; Mouse layer - optimized for small hands, right-hand operation  
-;; Left hand holds tab, right hand: UNEI=movement (U=up, N=left, E=down, I=right), QW=clicks
-(deflayer mouse
-  _       _    _    _    _    _    _    _    _    _    _    _    _    _
-  _       _    _    _    _    _    _    _    @mup _    _    _    _    _
-  _       @mq  @mw  _    _    _    _    @mlf @mdn @mrt _    _    _    _
-  _       _    _    _    _    _    _    _    _    _    _    _    _
-  _       _    _    _    _    _    @mn  @msm @mcom @mdot _    _
-  _       _    _              _              _    _    _    _
-)
 
-;; Mouse layer activation via modified tab key
-;; Double-tap tab or use with modifier to activate mouse layer
 
 ;; One-shot modifier layer (alternative approach - uncomment to use)
 ;; Access via a dedicated key if you struggle with tap-hold home row mods
@@ -145,29 +141,4 @@
   cpy  C-c                        ;; Copy
   pst  C-v                        ;; Paste
   udo  C-z                        ;; Undo
-  
-  ;; Mouse layer controls - optimized for right-hand operation
-  mou  (layer-toggle mouse)       ;; Toggle mouse layer
-  
-  ;; Mouse clicks - Q/W for left/right (easier reach)
-  mq   mlft                       ;; Mouse left click (Q key)
-  mw   mrgt                       ;; Mouse right click (W key)
-  mm   mmid                       ;; Mouse middle click (M key)
-  
-  ;; Mouse movement - UNEI cluster (U=up, N=left, E=down, I=right)
-  ;; Logical cross pattern: U above NEI line, optimized for small hands
-  ;; Fast movement: 1ms interval, 1 pixel per movement (maximum speed)
-  mup  (movemouse-up 1 1)         ;; Mouse move up (U key)
-  mlf  (movemouse-left 1 1)       ;; Mouse move left (N key)
-  mdn  (movemouse-down 1 1)       ;; Mouse move down (E key)
-  mrt  (movemouse-right 1 1)      ;; Mouse move right (I key)
-  
-  ;; Mouse wheel scrolling - corrected directions for intuitive use
-  mn   (mwheel-left 100 6)        ;; Mouse wheel left (N key)
-  msm  (mwheel-down 100 6)        ;; Mouse wheel down (M key)  
-  mcom (mwheel-up 100 6)          ;; Mouse wheel up (comma key)
-  mdot (mwheel-right 100 6)       ;; Mouse wheel right (period key)
-  
-  ;; Mouse layer activation - double-tap tab for mouse mode
-  mtab (tap-dance 200 (tab (layer-toggle mouse))) ;; Double-tap tab for mouse layer
 )
