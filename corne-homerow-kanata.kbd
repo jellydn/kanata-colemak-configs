@@ -79,7 +79,7 @@
 (deflayer mouse
   _       _    _    _    _    _    _    _    _    _    _    _    _    _
   _       _    _    _    _    _    _    _    _    _    _    _    _    _
-  _       @mq  @mw  _    _    _    _    @mml @mdn @mup @mrt _    _    _    _
+  _       @mq  @mw  _    _    _    _    @mml @mdn @mup @mrt _    _    _
   _       _    _    _    _    _    _    _    _    _    _    _    _
   _       _    _    _    _    _    @mn  @msm @mcom @mdot _    _
   _       _    _              _              _    _    _    _
