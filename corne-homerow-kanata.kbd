@@ -75,11 +75,11 @@
 )
 
 ;; Mouse layer - optimized for right-hand operation  
-;; Left hand holds tab, right hand: IJKL=movement, QW=clicks, NM,.=scroll
+;; Left hand holds tab, right hand: MNEI=movement (home row), QW=clicks, NM,.=scroll
 (deflayer mouse
   _       _    _    _    _    _    _    _    _    _    _    _    _    _
-  _       _    _    _    _    _    _    _    @mi  _    _    _    _    _
-  _       @mq  @mw  _    _    _    _    @mj  @mk  @ml  _    _    _    _
+  _       _    _    _    _    _    _    _    _    _    _    _    _    _
+  _       @mq  @mw  _    _    _    _    @mml @mdn @mup @mrt _    _    _    _
   _       _    _    _    _    _    _    _    _    _    _    _    _
   _       _    _    _    _    _    @mn  @msm @mcom @mdot _    _
   _       _    _              _              _    _    _    _
@@ -154,12 +154,12 @@
   mw   mrgt                       ;; Mouse right click (W key)
   mm   mmid                       ;; Mouse middle click (M key)
   
-  ;; Mouse movement - IJKL style (I=up, J=left, K=down, L=right)  
+  ;; Mouse movement - MNEI cluster on home row (M=left, N=down, E=up, I=right)  
   ;; Fast movement: 1ms interval, 1 pixel per movement (maximum speed)
-  mi   (movemouse-up 1 1)         ;; Mouse move up (I key)
-  mj   (movemouse-left 1 1)       ;; Mouse move left (J key)
-  mk   (movemouse-down 1 1)       ;; Mouse move down (K key)
-  ml   (movemouse-right 1 1)      ;; Mouse move right (L key)
+  mml  (movemouse-left 1 1)       ;; Mouse move left (M key)
+  mdn  (movemouse-down 1 1)       ;; Mouse move down (N key)
+  mup  (movemouse-up 1 1)         ;; Mouse move up (E key)
+  mrt  (movemouse-right 1 1)      ;; Mouse move right (I key)
   
   ;; Mouse wheel scrolling - corrected directions for intuitive use
   mn   (mwheel-left 100 6)        ;; Mouse wheel left (N key)
