@@ -75,11 +75,11 @@
 )
 
 ;; Mouse layer - optimized for small hands, right-hand operation  
-;; Left hand holds tab, right hand: FPBJ=movement (top row), QW=clicks, NM,.=scroll
+;; Left hand holds tab, right hand: UNEI=movement (U=up, N=left, E=down, I=right), QW=clicks
 (deflayer mouse
   _       _    _    _    _    _    _    _    _    _    _    _    _    _
-  _       _    _    _    _    _    _    _    _    _    _    _    _    _
-  _       @mq  @mw  @mlf @mdn @mup @mrt _    _    _    _    _    _    _
+  _       _    _    _    _    _    _    _    @mup _    _    _    _    _
+  _       @mq  @mw  _    _    _    _    @mlf @mdn @mrt _    _    _    _
   _       _    _    _    _    _    _    _    _    _    _    _    _
   _       _    _    _    _    _    @mn  @msm @mcom @mdot _    _
   _       _    _              _              _    _    _    _
@@ -154,13 +154,13 @@
   mw   mrgt                       ;; Mouse right click (W key)
   mm   mmid                       ;; Mouse middle click (M key)
   
-  ;; Mouse movement - FPBJ cluster on top row (F=left, P=down, B=up, J=right)  
-  ;; Optimized for small hands - no pinky strain, all on one comfortable row
+  ;; Mouse movement - UNEI cluster (U=up, N=left, E=down, I=right)
+  ;; Logical cross pattern: U above NEI line, optimized for small hands
   ;; Fast movement: 1ms interval, 1 pixel per movement (maximum speed)
-  mlf  (movemouse-left 1 1)       ;; Mouse move left (F key - index finger)
-  mdn  (movemouse-down 1 1)       ;; Mouse move down (P key - middle finger)
-  mup  (movemouse-up 1 1)         ;; Mouse move up (B key - ring finger)
-  mrt  (movemouse-right 1 1)      ;; Mouse move right (J key - minimal pinky)
+  mup  (movemouse-up 1 1)         ;; Mouse move up (U key)
+  mlf  (movemouse-left 1 1)       ;; Mouse move left (N key)
+  mdn  (movemouse-down 1 1)       ;; Mouse move down (E key)
+  mrt  (movemouse-right 1 1)      ;; Mouse move right (I key)
   
   ;; Mouse wheel scrolling - corrected directions for intuitive use
   mn   (mwheel-left 100 6)        ;; Mouse wheel left (N key)
