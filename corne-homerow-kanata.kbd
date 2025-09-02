@@ -74,12 +74,12 @@
   _       _    _              _              _    _    _    _
 )
 
-;; Mouse layer - optimized for right-hand operation  
-;; Left hand holds tab, right hand: MNEI=movement (home row), QW=clicks, NM,.=scroll
+;; Mouse layer - optimized for small hands, right-hand operation  
+;; Left hand holds tab, right hand: FPBJ=movement (top row), QW=clicks, NM,.=scroll
 (deflayer mouse
   _       _    _    _    _    _    _    _    _    _    _    _    _    _
   _       _    _    _    _    _    _    _    _    _    _    _    _    _
-  _       @mq  @mw  _    _    _    _    @mml @mdn @mup @mrt _    _    _
+  _       @mq  @mw  @mlf @mdn @mup @mrt _    _    _    _    _    _    _
   _       _    _    _    _    _    _    _    _    _    _    _    _
   _       _    _    _    _    _    @mn  @msm @mcom @mdot _    _
   _       _    _              _              _    _    _    _
@@ -154,12 +154,13 @@
   mw   mrgt                       ;; Mouse right click (W key)
   mm   mmid                       ;; Mouse middle click (M key)
   
-  ;; Mouse movement - MNEI cluster on home row (M=left, N=down, E=up, I=right)  
+  ;; Mouse movement - FPBJ cluster on top row (F=left, P=down, B=up, J=right)  
+  ;; Optimized for small hands - no pinky strain, all on one comfortable row
   ;; Fast movement: 1ms interval, 1 pixel per movement (maximum speed)
-  mml  (movemouse-left 1 1)       ;; Mouse move left (M key)
-  mdn  (movemouse-down 1 1)       ;; Mouse move down (N key)
-  mup  (movemouse-up 1 1)         ;; Mouse move up (E key)
-  mrt  (movemouse-right 1 1)      ;; Mouse move right (I key)
+  mlf  (movemouse-left 1 1)       ;; Mouse move left (F key - index finger)
+  mdn  (movemouse-down 1 1)       ;; Mouse move down (P key - middle finger)
+  mup  (movemouse-up 1 1)         ;; Mouse move up (B key - ring finger)
+  mrt  (movemouse-right 1 1)      ;; Mouse move right (J key - minimal pinky)
   
   ;; Mouse wheel scrolling - corrected directions for intuitive use
   mn   (mwheel-left 100 6)        ;; Mouse wheel left (N key)
