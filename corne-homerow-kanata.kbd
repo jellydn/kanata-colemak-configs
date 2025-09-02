@@ -22,13 +22,20 @@
   rapid-event-delay       5
   sequence-timeout        2000
   
-  ;; Target specific keyboard device - choose one:
-  ;; For MacBook built-in keyboard:
-  ;; macos-dev-names-include ("Apple Internal Keyboard / Trackpad")
-  ;; For external Corne keyboard:
-  macos-dev-names-include ("Corne v4")
+  ;; Target MacBook built-in keyboard only
+  macos-dev-names-include ("Apple Internal Keyboard / Trackpad")
+  
+  ;; DEVICE CONFIGURATION OPTIONS:
+  ;; Uncomment one of the following to change target device:
+  ;;
+  ;; For external Corne keyboard only:
+  ;; macos-dev-names-include ("Corne v4")
+  ;;
   ;; For all devices except virtual keyboards:
   ;; macos-dev-names-exclude ("Karabiner DriverKit VirtualHIDKeyboard 1.8.0")
+  ;;
+  ;; To see available devices, run: sudo kanata --list
+  ;; Then replace the device name in macos-dev-names-include
 )
 
 ;; Source layer - full keyboard
